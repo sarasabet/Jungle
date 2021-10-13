@@ -8,7 +8,6 @@ class ProductsController < ApplicationController
 
     @product = Product.find params[:id]
     @test = "Hello from heer!"
-    puts "HERE"
 
   end
 
