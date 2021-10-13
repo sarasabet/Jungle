@@ -1,10 +1,9 @@
 
 <article class="product">
 <% if product.quantity == 0 %>
-<aside id= "soldout" >SOLD OUT!</aside>
+<aside class= "soldout" >SOLD OUT!</aside>
 <% end %>
 <header>
-<%= product.quantity%>
   <%= link_to product do %>
     <%= image_tag product.image.thumb, alt: product.name %>
     <h4><%= product.name %></h4>
