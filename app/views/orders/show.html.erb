@@ -1,3 +1,4 @@
+
 <section class="orders-show">
 
   <header class="page-header">
@@ -21,7 +22,7 @@
       </tr>
     </thead>
     <tbody>
-    # on render method , we should pass the desire view , in this case item , and proper key:value 
+
     <% @order.line_items.each do |item| %>
       <%= render 'item', product: item.product, quantity: item[:quantity].to_i %>
     <% end %>
@@ -32,7 +33,7 @@
           TOTAL:
         </th>
         <th>
-        # call .total_cents  method to calculate/get total for each order
+       
           <%= humanized_money_with_symbol @order.total_cents / 100.0 %>
         </th>
       </tr>
