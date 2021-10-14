@@ -6,13 +6,15 @@
     <dd>Number of products <%= link_to @product_count, [ :admin, :products] %>
     <br/>
     <dt>Category
-    <dd>Click to see all categories <%= link_to @category_count, [:admin, :products] %></dd>
+    <dd>Click to see all categories <%= link_to "All Products", [:admin, :products] %></dd>
 
     <br/>
     <dt>Categorys' list
-    <dd><% @category_name.each do |category|%>
-      <li><%= category.name%><?li>
-      <%end%></dd>
+    <dd>
+      <% @category_name.each do |category|%>
+        <li><%= category.name%><?li>
+      <%end%>
+    </dd>
 
   </dl>
  
