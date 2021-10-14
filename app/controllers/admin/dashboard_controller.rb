@@ -4,6 +4,7 @@ class Admin::DashboardController < ApplicationController
     @product_count = Product.count
 
     @category_count= Product.select("category_id").group("category_id")
+    @category_name= Category.select("name").group("name")
  
 
   end
