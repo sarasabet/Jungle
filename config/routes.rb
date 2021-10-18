@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :product_specs
+  resources :product_specs
   root to: 'products#index'
 
   resources :products, only: [:index, :show]
