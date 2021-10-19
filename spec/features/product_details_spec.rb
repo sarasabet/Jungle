@@ -22,7 +22,8 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     # ACT
     visit root_path
     # to get the first child of article 
-    first('article.product img').click
+    # first('article.product img').click
+    all('article.product img').first.click
 
     #DEBUG
     sleep 5
@@ -32,6 +33,7 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     #  havetext/have_content are same 
     expect(page).to have_text("#{@category.name} » #{Product.last.name}")
     expect(page).to have_content("#{@category.name} » #{Product.last.name}")
+ 
    
   end
 end
