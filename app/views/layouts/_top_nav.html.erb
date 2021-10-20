@@ -48,6 +48,23 @@
             <li><%= link_to 'Categories', [:admin, :categories] %></li>
           </ul>
           </li>
+   
+
+             <% if current_user %>
+             <li>
+             <a>Signed in as&nbsp<%= current_user.name %></a>
+             </li>
+             <li>
+             <%= link_to 'Log out', :logout %>
+           </li>
+           <% else %>
+             <li>
+             <%= link_to 'Register',  '/signup' %>
+           </li>
+             <li>
+             <%= link_to 'Log in', :login %>
+           </li>
+           <% end %>
         
           <li>
             <%= link_to cart_path do %>
@@ -56,15 +73,7 @@
             
           </li>
 
-          <% if current_user %>
-     
-       Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
- 
-          <% else %>
-
-       <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-            </li>
-          <% end %>
+        
  
           </ul>
 
