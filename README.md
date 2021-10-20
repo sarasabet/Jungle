@@ -2,11 +2,7 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
-## Final product
 
-!["Home_page"](https://github.com/sarasabet/Jungle/blob/master/doc/main_page.png)
-!["My_Cart"](https://github.com/sarasabet/Jungle/blob/master/doc/my_cart.png)
-!["Admin_page"](https://github.com/sarasabet/Jungle/blob/master/doc/admin_add_categories.png)
 
 ## Additional Steps for Apple M1 Machines
 
@@ -37,3 +33,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Final product
+
+!["Home_page"](https://github.com/sarasabet/Jungle/blob/master/doc/main_page.png)
+!["My_Cart"](https://github.com/sarasabet/Jungle/blob/master/doc/my_cart.png)
+!["Admin_page"](https://github.com/sarasabet/Jungle/blob/master/doc/admin_add_categories.png)
