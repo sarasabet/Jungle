@@ -4,9 +4,9 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final product
 
-![""]()
-![""]()
-![""]()
+!["Home_page"](https://github.com/sarasabet/Jungle/blob/master/doc/main_page.png)
+!["My_Cart"](https://github.com/sarasabet/Jungle/blob/master/doc/my_cart.png)
+!["Admin_page"](https://github.com/sarasabet/Jungle/blob/master/doc/admin_add_categories.png)
 
 ## Additional Steps for Apple M1 Machines
 
